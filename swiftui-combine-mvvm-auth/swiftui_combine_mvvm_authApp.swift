@@ -11,7 +11,7 @@ import SwiftUI
 struct swiftui_combine_mvvm_authApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignUpView()
         }
     }
 }

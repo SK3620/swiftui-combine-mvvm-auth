@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		836B55CB2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55CA2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift */; };
-		836B55CD2C620F6E002FF8A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55CC2C620F6E002FF8A3 /* ContentView.swift */; };
+		836B55CD2C620F6E002FF8A3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55CC2C620F6E002FF8A3 /* SignUpView.swift */; };
 		836B55CF2C620F73002FF8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55CE2C620F73002FF8A3 /* Assets.xcassets */; };
 		836B55D22C620F73002FF8A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55D12C620F73002FF8A3 /* Preview Assets.xcassets */; };
+		836B55DA2C6210B0002FF8A3 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55D92C6210B0002FF8A3 /* ColorCodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		836B55C72C620F6E002FF8A3 /* swiftui-combine-mvvm-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-combine-mvvm-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		836B55CA2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_mvvm_authApp.swift; sourceTree = "<group>"; };
-		836B55CC2C620F6E002FF8A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		836B55CC2C620F6E002FF8A3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		836B55CE2C620F73002FF8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836B55D12C620F73002FF8A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		836B55D92C6210B0002FF8A3 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		836B55C92C620F6E002FF8A3 /* swiftui-combine-mvvm-auth */ = {
 			isa = PBXGroup;
 			children = (
+				836B55D82C621095002FF8A3 /* Model */,
 				836B55CA2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift */,
-				836B55CC2C620F6E002FF8A3 /* ContentView.swift */,
+				836B55CC2C620F6E002FF8A3 /* SignUpView.swift */,
 				836B55CE2C620F73002FF8A3 /* Assets.xcassets */,
 				836B55D02C620F73002FF8A3 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				836B55D12C620F73002FF8A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		836B55D82C621095002FF8A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				836B55D92C6210B0002FF8A3 /* ColorCodes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836B55CD2C620F6E002FF8A3 /* ContentView.swift in Sources */,
+				836B55DA2C6210B0002FF8A3 /* ColorCodes.swift in Sources */,
+				836B55CD2C620F6E002FF8A3 /* SignUpView.swift in Sources */,
 				836B55CB2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
