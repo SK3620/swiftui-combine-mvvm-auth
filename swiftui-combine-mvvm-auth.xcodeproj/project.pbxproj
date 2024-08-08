@@ -12,15 +12,25 @@
 		836B55CF2C620F73002FF8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55CE2C620F73002FF8A3 /* Assets.xcassets */; };
 		836B55D22C620F73002FF8A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B55D12C620F73002FF8A3 /* Preview Assets.xcassets */; };
 		836B55DA2C6210B0002FF8A3 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55D92C6210B0002FF8A3 /* ColorCodes.swift */; };
+		836B55DD2C622421002FF8A3 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55DC2C622421002FF8A3 /* SignUpViewModel.swift */; };
+		837A7FDE2C648759006E8C2C /* AuthHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */; };
+		837A7FE02C64876C006E8C2C /* AuthHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */; };
+		9882AC232022683FBD9C8F4B /* Pods_swiftui_combine_mvvm_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268F28F54F9702E1EF9DCA9 /* Pods_swiftui_combine_mvvm_auth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AE82687221704A5E17ECDAB /* Pods-swiftui-combine-mvvm-auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-combine-mvvm-auth.release.xcconfig"; path = "Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth.release.xcconfig"; sourceTree = "<group>"; };
 		836B55C72C620F6E002FF8A3 /* swiftui-combine-mvvm-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-combine-mvvm-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		836B55CA2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_mvvm_authApp.swift; sourceTree = "<group>"; };
 		836B55CC2C620F6E002FF8A3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		836B55CE2C620F73002FF8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		836B55D12C620F73002FF8A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		836B55D92C6210B0002FF8A3 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
+		836B55DC2C622421002FF8A3 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpRouter.swift; sourceTree = "<group>"; };
+		837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpService.swift; sourceTree = "<group>"; };
+		A5BC321BE673514A5976483C /* Pods-swiftui-combine-mvvm-auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-combine-mvvm-auth.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth.debug.xcconfig"; sourceTree = "<group>"; };
+		E268F28F54F9702E1EF9DCA9 /* Pods_swiftui_combine_mvvm_auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_combine_mvvm_auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +38,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9882AC232022683FBD9C8F4B /* Pods_swiftui_combine_mvvm_auth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C3F3F787D00BE1984074712 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5BC321BE673514A5976483C /* Pods-swiftui-combine-mvvm-auth.debug.xcconfig */,
+				7AE82687221704A5E17ECDAB /* Pods-swiftui-combine-mvvm-auth.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D4FCA1B7BAAE94CCE2D6CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E268F28F54F9702E1EF9DCA9 /* Pods_swiftui_combine_mvvm_auth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		836B55BE2C620F6E002FF8A3 = {
 			isa = PBXGroup;
 			children = (
 				836B55C92C620F6E002FF8A3 /* swiftui-combine-mvvm-auth */,
 				836B55C82C620F6E002FF8A3 /* Products */,
+				3C3F3F787D00BE1984074712 /* Pods */,
+				4D4FCA1B7BAAE94CCE2D6CFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +84,8 @@
 		836B55C92C620F6E002FF8A3 /* swiftui-combine-mvvm-auth */ = {
 			isa = PBXGroup;
 			children = (
+				837A7FDC2C648703006E8C2C /* Service */,
+				836B55DB2C622405002FF8A3 /* ViewModel */,
 				836B55D82C621095002FF8A3 /* Model */,
 				836B55CA2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift */,
 				836B55CC2C620F6E002FF8A3 /* SignUpView.swift */,
@@ -78,6 +111,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		836B55DB2C622405002FF8A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				836B55DC2C622421002FF8A3 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		837A7FDC2C648703006E8C2C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */,
+				837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836B55D52C620F73002FF8A3 /* Build configuration list for PBXNativeTarget "swiftui-combine-mvvm-auth" */;
 			buildPhases = (
+				0C52081D02E54D45D6E56D50 /* [CP] Check Pods Manifest.lock */,
 				836B55C32C620F6E002FF8A3 /* Sources */,
 				836B55C42C620F6E002FF8A3 /* Frameworks */,
 				836B55C52C620F6E002FF8A3 /* Resources */,
+				A028B554E4F399079EFC7494 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,13 +195,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C52081D02E54D45D6E56D50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftui-combine-mvvm-auth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A028B554E4F399079EFC7494 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		836B55C32C620F6E002FF8A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				836B55DA2C6210B0002FF8A3 /* ColorCodes.swift in Sources */,
+				837A7FE02C64876C006E8C2C /* AuthHttpService.swift in Sources */,
 				836B55CD2C620F6E002FF8A3 /* SignUpView.swift in Sources */,
+				837A7FDE2C648759006E8C2C /* AuthHttpRouter.swift in Sources */,
+				836B55DD2C622421002FF8A3 /* SignUpViewModel.swift in Sources */,
 				836B55CB2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +375,7 @@
 		};
 		836B55D62C620F73002FF8A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BC321BE673514A5976483C /* Pods-swiftui-combine-mvvm-auth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +405,7 @@
 		};
 		836B55D72C620F73002FF8A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE82687221704A5E17ECDAB /* Pods-swiftui-combine-mvvm-auth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

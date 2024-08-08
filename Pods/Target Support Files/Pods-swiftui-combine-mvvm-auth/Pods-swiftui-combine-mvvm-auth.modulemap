@@ -1,0 +1,6 @@
+framework module Pods_swiftui_combine_mvvm_auth {
+  umbrella header "Pods-swiftui-combine-mvvm-auth-umbrella.h"
+
+  export *
+  module * { export * }
+}
