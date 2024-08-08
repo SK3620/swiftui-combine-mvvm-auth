@@ -15,6 +15,14 @@
 		836B55DD2C622421002FF8A3 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B55DC2C622421002FF8A3 /* SignUpViewModel.swift */; };
 		837A7FDE2C648759006E8C2C /* AuthHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */; };
 		837A7FE02C64876C006E8C2C /* AuthHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */; };
+		837A7FE22C648A9A006E8C2C /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FE12C648A9A006E8C2C /* AuthModel.swift */; };
+		837A7FE42C648C07006E8C2C /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FE32C648C07006E8C2C /* HttpRouter.swift */; };
+		837A7FE62C648DC9006E8C2C /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FE52C648DC9006E8C2C /* HttpService.swift */; };
+		837A7FE82C6493D5006E8C2C /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FE72C6493D5006E8C2C /* AuthAPI.swift */; };
+		837A7FEA2C6494A6006E8C2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FE92C6494A6006E8C2C /* AuthService.swift */; };
+		837A7FEC2C64AA3E006E8C2C /* AuthServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FEB2C64AA3E006E8C2C /* AuthServiceParser.swift */; };
+		837A7FEE2C64AE99006E8C2C /* TokenResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FED2C64AE99006E8C2C /* TokenResponseModel.swift */; };
+		837A7FF02C64B194006E8C2C /* SignUpErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837A7FEF2C64B194006E8C2C /* SignUpErrorModel.swift */; };
 		9882AC232022683FBD9C8F4B /* Pods_swiftui_combine_mvvm_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268F28F54F9702E1EF9DCA9 /* Pods_swiftui_combine_mvvm_auth.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +37,14 @@
 		836B55DC2C622421002FF8A3 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpRouter.swift; sourceTree = "<group>"; };
 		837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpService.swift; sourceTree = "<group>"; };
+		837A7FE12C648A9A006E8C2C /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		837A7FE32C648C07006E8C2C /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		837A7FE52C648DC9006E8C2C /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		837A7FE72C6493D5006E8C2C /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		837A7FE92C6494A6006E8C2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		837A7FEB2C64AA3E006E8C2C /* AuthServiceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceParser.swift; sourceTree = "<group>"; };
+		837A7FED2C64AE99006E8C2C /* TokenResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseModel.swift; sourceTree = "<group>"; };
+		837A7FEF2C64B194006E8C2C /* SignUpErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrorModel.swift; sourceTree = "<group>"; };
 		A5BC321BE673514A5976483C /* Pods-swiftui-combine-mvvm-auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-combine-mvvm-auth.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-combine-mvvm-auth/Pods-swiftui-combine-mvvm-auth.debug.xcconfig"; sourceTree = "<group>"; };
 		E268F28F54F9702E1EF9DCA9 /* Pods_swiftui_combine_mvvm_auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_combine_mvvm_auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,7 +67,6 @@
 				A5BC321BE673514A5976483C /* Pods-swiftui-combine-mvvm-auth.debug.xcconfig */,
 				7AE82687221704A5E17ECDAB /* Pods-swiftui-combine-mvvm-auth.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				836B55D92C6210B0002FF8A3 /* ColorCodes.swift */,
+				837A7FED2C64AE99006E8C2C /* TokenResponseModel.swift */,
+				837A7FE12C648A9A006E8C2C /* AuthModel.swift */,
+				837A7FEF2C64B194006E8C2C /* SignUpErrorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,7 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				837A7FDD2C648759006E8C2C /* AuthHttpRouter.swift */,
+				837A7FE72C6493D5006E8C2C /* AuthAPI.swift */,
+				837A7FE32C648C07006E8C2C /* HttpRouter.swift */,
 				837A7FDF2C64876C006E8C2C /* AuthHttpService.swift */,
+				837A7FE92C6494A6006E8C2C /* AuthService.swift */,
+				837A7FE52C648DC9006E8C2C /* HttpService.swift */,
+				837A7FEB2C64AA3E006E8C2C /* AuthServiceParser.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -244,9 +267,17 @@
 			files = (
 				836B55DA2C6210B0002FF8A3 /* ColorCodes.swift in Sources */,
 				837A7FE02C64876C006E8C2C /* AuthHttpService.swift in Sources */,
+				837A7FE22C648A9A006E8C2C /* AuthModel.swift in Sources */,
 				836B55CD2C620F6E002FF8A3 /* SignUpView.swift in Sources */,
+				837A7FE42C648C07006E8C2C /* HttpRouter.swift in Sources */,
+				837A7FEA2C6494A6006E8C2C /* AuthService.swift in Sources */,
+				837A7FEE2C64AE99006E8C2C /* TokenResponseModel.swift in Sources */,
+				837A7FE62C648DC9006E8C2C /* HttpService.swift in Sources */,
+				837A7FE82C6493D5006E8C2C /* AuthAPI.swift in Sources */,
 				837A7FDE2C648759006E8C2C /* AuthHttpRouter.swift in Sources */,
+				837A7FF02C64B194006E8C2C /* SignUpErrorModel.swift in Sources */,
 				836B55DD2C622421002FF8A3 /* SignUpViewModel.swift in Sources */,
+				837A7FEC2C64AA3E006E8C2C /* AuthServiceParser.swift in Sources */,
 				836B55CB2C620F6E002FF8A3 /* swiftui_combine_mvvm_authApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
