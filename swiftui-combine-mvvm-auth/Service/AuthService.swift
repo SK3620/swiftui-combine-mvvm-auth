@@ -30,7 +30,11 @@ extension AuthService: AuthAPI {
     
     func signUp(userName: String, email: String, password: String) -> Future<(statusCode: Int, data: Data), Error> {
         
+        // Futureはインスタンスが生成された時点で実行されてしまう。なので、以下も実行されてしまうので、Deffered？をつけるべき？
         return Future<(statusCode: Int, data: Data), Error> { [httpService] promise in
+            // promise: (Result<(statusCode: Int, data: Data), any Error>) -> Void
+            // promiseは引数に (Result<(statusCode: Int, data: Data), any Error>)を受け取り、void型を返す関数である
+            // なので、promise(.success(値))みたいな書き方可能
             do {
                 try AuthHttpRouter.signUp(AuthModel(name: userName, email: email, password: password))
                     .request(usingHttpService: httpService)
