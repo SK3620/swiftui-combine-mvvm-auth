@@ -9,18 +9,12 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State var userName: String = ""
-    var usernameError: String = "Required"
-
-    @State var email: String = ""
-    var emailError: String = "Required"
+    @ObservedObject private var viewModel: SignUpViewModel
     
-    @State var password: String = ""
-    var passwordError: String = "Required"
+    init(viewModel: SignUpViewModel) {
+        self.viewModel = viewModel
+    }
     
-    @State var confirmPassword: String = ""
-    var confirmPasswordError: String = "Required"
-
     var body: some View {
         
         ZStack {
@@ -34,13 +28,13 @@ struct SignUpView: View {
                 
                 
                 // $ → プロパティをバインディングとして渡し、同期させる
-                AuthTextField(title: "UserName", textValue: $userName, errorValue: usernameError)
+                AuthTextField(title: "UserName", textValue: $viewModel.userName, errorValue: viewModel.usernameError)
                 
-                AuthTextField(title: "Email", textValue: $email, errorValue: emailError, keyboardType: .emailAddress)
+                AuthTextField(title: "Email", textValue: $viewModel.email, errorValue: viewModel.emailError, keyboardType: .emailAddress)
                 
-                AuthTextField(title: "Password", textValue: $password, errorValue: passwordError, isSecured: true)
+                AuthTextField(title: "Password", textValue: $viewModel.password, errorValue: viewModel.passwordError, isSecured: true)
                 
-                AuthTextField(title: "Confitm Password", textValue: $confirmPassword, errorValue: confirmPasswordError, isSecured: true)
+                AuthTextField(title: "Confitm Password", textValue: $viewModel.confirmPassword, errorValue: viewModel.confirmPasswordError, isSecured: true)
                 
                 Button {
                     signUp()
@@ -65,7 +59,9 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    
+    let viewModel = SignUpViewModel()
+    return SignUpView(viewModel: viewModel)
 }
 
 extension ColorCodes {

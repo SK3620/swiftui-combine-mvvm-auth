@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct swiftui_combine_mvvm_authApp: App {
+    
+    let viewModel = SignUpViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            SignUpView(viewModel: viewModel)
         }
     }
 }
