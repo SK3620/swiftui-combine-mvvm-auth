@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct swiftui_combine_mvvm_authApp: App {
     
-    let viewModel = SignUpViewModel()
+    let viewModel = SignUpViewModel(authApi: AuthService.shared, authServiceParser: AuthServiceParser.shared)
     
     var body: some Scene {
         WindowGroup {

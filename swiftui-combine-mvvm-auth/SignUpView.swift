@@ -36,33 +36,33 @@ struct SignUpView: View {
                 
                 AuthTextField(title: "Confitm Password", textValue: $viewModel.confirmPassword, errorValue: viewModel.confirmPasswordError, isSecured: true)
                 
-                Button {
-                    signUp()
-                } label: {
-                    Text("Sign Up Clicked")
-                }
+                Button(action: viewModel.signUp, label: {
+                    Text("Sign Up")
+                })
+                .disabled(!viewModel.enableSignUp)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .foregroundColor(Color.white)
                 .padding()
-                .background(Color.black)
+                .background(viewModel.enableSignUp ? Color.black : Color.gray)
                 .cornerRadius(.infinity)
                 .padding(.top, 20.0)
-
+                
+                Text(viewModel.statusViewModel.title)
+                    .font(.headline)
+                    .fontWeight(.light)
+                    .foregroundColor(viewModel.statusViewModel.color.color())
+                    .padding(.top)
             }
             .padding(60)
         }
     }
-    
-    private func signUp() -> Void {
-        print("clicked")
-    }
 }
 
-#Preview {
-    
-    let viewModel = SignUpViewModel()
-    return SignUpView(viewModel: viewModel)
-}
+//#Preview {
+//    
+//    let viewModel = SignUpViewModel()
+//    return SignUpView(viewModel: viewModel)
+//}
 
 extension ColorCodes {
     
