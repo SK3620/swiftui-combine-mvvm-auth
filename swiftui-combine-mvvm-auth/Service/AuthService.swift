@@ -172,10 +172,25 @@ extension AuthService: AuthAPI {
     }
      */
     
-    
+    /*
+    final public class Future<Output, Failure> : Publisher where Failure : Error {
+     
+     ②<Output, Failure>が決ま。
+     public typealias Promise = (Result<Output, Failure>) -> Void
+     
+     ①↓まず、Futrueが流す値の型を決めて、以下のメソッドでinitして、
+     public init(_ attemptToFulfill: @escaping (@escaping Future<Output, Failure>.Promise) -> Void)
+     ③Future<Output, Failure>."Promise"で、型が返ってくる。
+     .....
+     }
+     */
+
     func checkEmail(email: String) -> Future<Bool, Never> {
         
+        // Futureが流す値を決める
+//        public init(_ attemptToFulfill: @escaping (@escaping Future<Output, Failure>.Promise) -> Void)↓
         return Future<Bool, Never> { [httpService] promise in
+            // promise: (Result<Bool, Never>) -> Void
             do {
                 try AuthHttpRouter.valudateEmail(email: email).request(usingHttpService: httpService).responseJSON {
                     (response) in

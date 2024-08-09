@@ -26,6 +26,8 @@ class AuthServiceParser: AuthServiceParseable {
                     do {
                         let authError = try  JSONDecoder().decode(SignUpErrorModel.self, from: args.data)
                         if let nameError = authError.validationErrors.name?.first {
+                            // ↓ <Error>ではなく、<AuthResult<TokenResponseModel>>の中のエラーをpublishしている
+                            // 定義 → failure(message: String):<AuthResult<TokenResponseModel>>
                             return .failure(message: nameError)
                         }
                         if let emailError = authError.validationErrors.email?.first {
@@ -41,6 +43,7 @@ class AuthServiceParser: AuthServiceParseable {
                 }
                 
                 guard let tokenResponseModel = try? JSONDecoder().decode(TokenResponseModel.self, from: args.data) else {
+                    // これが、<Error>型に該当する
                     throw SignUpError.invalidJSON
                 }
                 
